@@ -1,0 +1,107 @@
+body {
+  background: #000000;
+  color: #ffffff;
+  background-image: 
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 20px),
+    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 20px);
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(45deg, #000000, #1a1a1a);
+}
+
+#home h1 {
+  font-size: 4rem;
+  animation: fadeInDown 1s;
+}
+
+#home p {
+    color: #dddddd;
+    animation: fadeInUp 1s;
+}
+
+.card {
+  border: 1px solid #333333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255,255,255,0.1);
+}
+
+.card-title {
+    color: #000000;
+}
+
+.card-text {
+    color: #333333;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #00c6ff, #2ddc4b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00c6ff;
+  animation: fadeInDown 1s;
+  filter: contrast(1.1) brightness(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
